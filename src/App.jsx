@@ -4,7 +4,7 @@ import React from 'react'
 const App = () => {
   return (
     <div className="app">
-    <h1>Catatan 📝</h1>
+    <h1>ACatatan 📝</h1>
     <form className="add-form">
       <h3>Hari ini belanja apa kita?</h3>
       <div>
