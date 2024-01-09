@@ -3,8 +3,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className="app">
-    <h1>Aplikasi Catatan 📝</h1>
+    <div className="app bg-slate-600 w-full flex flex-col gap-10 p-5 items-center">
+    <h1 className='text-5xl font-bold'>Aplikasi Catatan 📝</h1>
     <form className="add-form">
       <h3>Hari ini belanja apa kita?</h3>
       <div>
