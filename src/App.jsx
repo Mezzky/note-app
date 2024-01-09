@@ -22,8 +22,8 @@ const App = () => {
     <div className="list">
       <ul>
         <li>
-          <input type="checkbox" checked="true" />
-          <span style="text-decoration: line-through;">1 Kopi</span>
+          <input type="checkbox" />
+          <span>1 Kopi</span>
           <button>&times;</button>
         </li>
         <li>
