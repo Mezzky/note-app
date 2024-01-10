@@ -1,6 +1,6 @@
 # Note App
 
-This app is make by ReactJS and T ailwindCSS the best c o m b o for frontend development.
+This app is make by ReactJS and T a ilwindCSS the best c o m b o for frontend development.
 
 Currently, two official framework and library are available:
 
