@@ -5,4 +5,4 @@ This app is make by ReactJS and TailwindCSS the best combo for frontend developm
 Currently, two official framework and library are available:
 
 - ReactJs uses for Website Development.
-- TailwindCSS uses for st y l i n g the website.
+- TailwindCSS uses for sty l i n g the website.
