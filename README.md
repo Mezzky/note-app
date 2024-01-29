@@ -1,6 +1,6 @@
 # Note App
 
-This a p p  i s make by ReactJS and TailwindCSS the best combo for frontend development.
+This a p p  i s  make by ReactJS and TailwindCSS the best combo for frontend development.
 
 Currently, two official framework and library are available:
 
