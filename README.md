@@ -1,6 +1,6 @@
 # Note App
 
-This app is make by ReactJS and TailwindCSS t h e b e st combo for frontend development.
+This app is make by ReactJS and TailwindCSS t h e b e s t combo for frontend development.
 
 Currently, two official framework and library are available:
 
