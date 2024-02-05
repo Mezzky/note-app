@@ -36,6 +36,14 @@ export default function App() {
     setItems([]);
   }
 
+  function handleToggleItem(id) {
+    setItems((items) =>
+      items.map((item) =>
+        item.id === id ? { ...item, checked: !item.checked } : item
+      )
+    );
+  }
+
   return (
     <div className="app">
       <Header />
@@ -44,8 +52,9 @@ export default function App() {
         items={items}
         onDeleteItem={handleDeleteItem}
         clearItems={clearItems}
+        onToggleItem={handleToggleItem}
       />
-      <Stats />
+      <Stats items={items} />
     </div>
   );
 }
@@ -106,18 +115,38 @@ function Form({ onAddItem }) {
   );
 }
 
-function GroceryList({ items, onDeleteItem, clearItems }) {
+function GroceryList({ items, onDeleteItem, clearItems, onToggleItem }) {
+  const [sortBy, setSortBy] = useState("input");
+
+  let sortedItems;
+
+  switch (sortBy) {
+    case "name":
+      sortedItems = items.slice().sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    case "checked":
+      sortedItems = items.slice().sort((a, b) => a.checked - b.checked);
+      break;
+    default:
+      sortedItems = items;
+  }
+
   return (
     <>
       <div className="list">
         <ul>
-          {items.map((item) => (
-            <Item item={item} key={item.id} onDeleteItem={onDeleteItem} />
+          {sortedItems.map((item) => (
+            <Item
+              item={item}
+              key={item.id}
+              onDeleteItem={onDeleteItem}
+              onToggleItem={onToggleItem}
+            />
           ))}
         </ul>
       </div>
       <div className="actions">
-        <select>
+        <select vaalue={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value="input">Urutkan berdasarkan urutan input</option>
           <option value="name">Urutkan berdasarkan nama barang</option>
           <option value="checked">Urutkan berdasarkan ceklis</option>
@@ -128,10 +157,14 @@ function GroceryList({ items, onDeleteItem, clearItems }) {
   );
 }
 
-function Item({ item, onDeleteItem }) {
+function Item({ item, onDeleteItem, onToggleItem }) {
   return (
     <li key={item.id}>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        checked={item.checked}
+        onChange={() => onToggleItem(item.id)}
+      />
       <span style={item.checked ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.name}
       </span>
@@ -140,10 +173,15 @@ function Item({ item, onDeleteItem }) {
   );
 }
 
-function Stats() {
+function Stats({ items }) {
+  const totalItems = items.length;
+  const checkedItems = items.filter((item) => item.checked).length;
+  const percentage = Math.round((checkedItems / totalItems) * 100);
+
   return (
     <footer className="stats">
-      Ada 10 barang di daftar belanjaan, 5 barang sudah dibeli (50%)
+      Ada {totalItems} barang di daftar belanjaan, {checkedItems} barang sudah
+      dibeli {percentage}%
     </footer>
   );
 }
