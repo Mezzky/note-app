@@ -21,6 +21,7 @@ const groceryItems = [
   },
 ];
 
+
 export default function App() {
   const [items, setItems] = useState(groceryItems);
 
