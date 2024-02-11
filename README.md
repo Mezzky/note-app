@@ -1,6 +1,6 @@
 # Note App
 
-T his a p p is make by ReactJS and TailwindCSS the best combo for frontend development.
+T h is a p p is make by ReactJS and TailwindCSS the best combo for frontend development.
 
 Currently, two official framework and library are available:
 
