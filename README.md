@@ -1,6 +1,6 @@
 # Note App
 
-This app is make by R e a c tJS and TailwindCSS the best combo for frontend development.
+This app is make by R e a ctJS and TailwindCSS the best combo for frontend development.
 
 Currently, two official framework and library are available:
 
