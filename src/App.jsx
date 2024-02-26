@@ -21,7 +21,7 @@ const groceryItems = [
   },
   {
     id: 4,
-    name: "Air",
+    name: "Ai",
     quantity: 3,
     checked: false,
   },
