@@ -21,7 +21,7 @@ const groceryItems = [
   },
   {
     id: 4,
-    name: "Susu Sega",
+    name: "Susu Segar",
     quantity: 3,
     checked: false,
   },
