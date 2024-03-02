@@ -1,4 +1,4 @@
-# N o t e App
+# N o te App
 
 This app is make by ReactJS and TailwindCSS the best combo for frontend development.
 
