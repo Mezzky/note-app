@@ -1,6 +1,6 @@
 # Note App
 
-This app is make by ReactJS and T a i l w indCSS the best combo for frontend development.
+This app is make by ReactJS and T a i l w i ndCSS the best combo for frontend development.
 
 Currently, two official framework and  library are available:
 
