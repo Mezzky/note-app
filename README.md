@@ -1,6 +1,6 @@
 # Note App
 
-T h i s  app is make by ReactJS and TailwindCSS the best combo for frontend development.
+T h i s  a pp is make by ReactJS and TailwindCSS the best combo for frontend development.
 
 Currently, two official framework and  library are available:
 
