@@ -1,6 +1,6 @@
 # Note App
 
-This app is make by React J S and TailwindCSS the best combo for frontend development.
+This app is make by ReactJ S and TailwindCSS the best combo for frontend development.
 
 Currently, two official framework and  library are available:
 
